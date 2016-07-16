@@ -2745,7 +2745,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 .carousel-indicators {
   position: absolute;
-  bottom: 10px;
+  bottom: -10px !important;
   left: 50%;
   z-index: 15;
   width: 60%;
@@ -2767,9 +2767,6 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   background-color: rgba(0, 0, 0, 0);
 }
 .carousel-indicators .active {
-  margin: 0;
-  width: 12px;
-  height: 12px;
   background-color: #ffffff;
 }
 .carousel-caption {

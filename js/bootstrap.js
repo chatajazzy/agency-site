@@ -141,7 +141,7 @@ if (typeof jQuery === 'undefined') {
     var isCycling = this.interval
     var direction = type == 'next' ? 'left' : 'right'
     var that      = this
-
+    
     if ($next.hasClass('active')) return (this.sliding = false)
 
     var relatedTarget = $next[0]
