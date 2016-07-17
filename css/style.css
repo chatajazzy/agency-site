@@ -310,7 +310,7 @@ a.arrow-down > span {
 /* ABOUT */
 
 #about {
-    background: url(../img/about.jpg) no-repeat;
+    background: url(../img/about-bg.jpg) no-repeat;
     min-height: 100vh;
 }
 .about-col {
