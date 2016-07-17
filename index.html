@@ -5,13 +5,13 @@
 	<title>Agency Site</title>
 	<link href='https://fonts.googleapis.com/css?family=Dosis:400,700,300,200,500,600,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,300,300italic,400italic,600italic,700,700italic,800italic,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body data-spy="scroll" data-target="#menu">
 	<header class="page-header">
 		<!-- nav -->
-<nav class="navbar navbar-default .navbar-fixed-top">
+<nav class="page-nav navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -21,82 +21,169 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="index.html">
       	<img src="img/logo.png" alt="">
       </a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="menu">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">About<span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Works</a></li>
-        <li><a href="#">Industries</a></li>
-        <li><a href="#">Features</a></li>
-        <li><a href="#">News</a></li>
-        <li><a href="#">Contact</a></li>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#works">Works</a></li>
+        <li><a href="#industries">Industries</a></li>
+        <li><a href="#feature">Features</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#page-footer">Contact</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
 		<!-- /nav -->
 		<!-- header-caption -->
+
+
+  <div class="container">
+  <div class="row">
+  	<div class="col-sm-7">
+  		  <div id="carousel-example-vertical" class="carousel vertical slide">
+<!--   		    Indicators -->
+  <ol class="carousel-indicators carousel-indicators-text">
+    <li data-target="#carousel-example-vertical" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-vertical" data-slide-to="1"></li>
+    <li data-target="#carousel-example-vertical" data-slide-to="2"></li>
+    <li data-target="#carousel-example-vertical" data-slide-to="3"></li>
+    <li data-target="#carousel-example-vertical" data-slide-to="4"></li>
+  </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <h1 class="ticker-headline">
+            <a href="#">
+              <span class="top-title">Agency</span><br>
+              Freebie psd download
+            </a>
+          </h1>
+          <p>Maecenas suscipit imperdiet nisi ac hendrerit. Nam congue felis ac massa rutrum pulvinar. Donec sodales eros sed efficitur mattis. Integer tincidunt, felis a placerat maximus, eros nulla dapibus dui, at facilisis enim odio at velit. Aenean dictum eleifend mi sit amet luctus. </p>
+        </div>
+     
+        <div class="item">
+          <h1 class="ticker-headline">
+            <a href="#">
+             <span class="top-title">Agency</span><br>
+              Freebie psd download
+            </a>
+          </h1>
+          <p>Maecenas suscipit iss lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, expedita.amet luctus. </p>
+        </div>
+
+
+        <div class="item">
+          <h1 class="ticker-headline">
+            <a href="#">
+             <span class="top-title">Agency</span><br>
+              Freebie psd download
+            </a>
+          </h1>
+          <p>Maecenas suscipit iss lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, expedita.amet luctus. </p>
+        </div>
+
+
+        <div class="item">
+          <h1 class="ticker-headline">
+            <a href="#">
+             <span class="top-title">Agency</span><br>
+              Freebie psd download
+            </a>
+          </h1>
+          <p>Maecenas suscipit iss lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, expedita.amet luctus. </p>
+        </div>
+
+
+        <div class="item">
+          <h1 class="ticker-headline">
+            <a href="#">
+             <span class="top-title">Agency</span><br>
+              Freebie psd download
+            </a>
+          </h1>
+          <p>Maecenas suscipit iss lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, expedita.amet luctus. </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  	</div>
+  	<div class="row">
+  		<div class="col-xs-12">
+  			<a href="#about" class="arrow-down">
+  				<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+  			</a>
+  		</div>
+  	</div>
+  </div>
+  
+
 		<!-- /header-caption -->
 	</header>
 
 <main class="main-content">
 	<section class="clients-bar">
-		<div class="container">
-			<div class="row">
-				<div class="clients-title col-xs-12 col-sm-3">
-				<div class="clients-text">
-					<h3>Our clients</h3>
-					<a href="#">View all</a>
-				</div>
-				</div>
-				<div class="clients-icons col-xs-12 col-sm-9">
-					<div class="row">
-						<div class="clients-item col-xs-4 col-sm-2">
-							<img src="img/client6.png" alt="">
+		<div class="container-fluid">
+			<div class="row skew">
+				<div class="col-sm-1 test hidden-xs"></div>
+				<div class="col-sm-11 skew">
+					<div class="container skew">
+						<div class="clients-title col-xs-12 col-sm-3">
+							<div class="clients-text">
+								<h3>Our clients</h3>
+								<a href="#">View all</a>
+							</div>
+							<span class="clients-title-skew"></span>
 						</div>
-						<div class="clients-item col-xs-4 col-sm-2">
-							<img src="img/client5.png" alt="">
+						<div class="clients-icons col-xs-12 col-sm-9">
+							<div class="row">
+								<div class="clients-item col-xs-6 col-sm-2">
+									<img src="img/client6.png" alt="">
+								</div>
+								<div class="clients-item col-xs-6 col-sm-2">
+									<img src="img/client5.png" alt="">
+								</div>
+								<div class="clients-item col-xs-6 col-sm-2">
+									<img src="img/client4.png" alt="">
+								</div>
+								<div class="clients-item col-xs-6 col-sm-2">
+									<img src="img/client3.png" alt="">
+								</div>
+								<div class="clients-item col-xs-6 col-sm-2">
+									<img src="img/client2.png" alt="">
+								</div>
+								<div class="clients-item col-xs-6 col-sm-2">
+									<img src="img/client1.png" alt="">
+								</div>
+							</div>
 						</div>
-						<div class="clients-item col-xs-4 col-sm-2">
-							<img src="img/client4.png" alt="">
-						</div>
-						<div class="clients-item col-xs-4 col-sm-2">
-							<img src="img/client3.png" alt="">
-						</div>
-						<div class="clients-item col-xs-4 col-sm-2">
-							<img src="img/client2.png" alt="">
-						</div>
-						<div class="clients-item col-xs-4 col-sm-2">
-							<img src="img/client1.png" alt="">
-						</div>
-
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section class="about">
+	<section class="about" id="about">
 		<div class="container-fluid">
-			<div class="row dupek-bg">
+			<div class="row">
 				<div class="about-col col-xs-12 col-sm-6 pull-right">
-				<div class="about-intro">
-					<h2>Hello</h2>
-					<p class="subtitle">Lorem ipsum dolor sit amet</p>
-					<p>Curabitur et dapibus leo. Donec eleifend pharetra sem, et interdum nunc semper vel. Sed interdum magna eu faucibus faucibus.</p>
-					<p>Nulla varius faucibus arcu, eget aliquet tortor sollicitudin ut. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam sollicitudin felis quis varius porta. Donec sit amet diam a elit pulvinar pretium.</p>
-					<a href="#" class="btn about-us">see more about us</a>
-				</div>
+					<div class="about-intro">
+						<h2>Hello</h2>
+						<p class="subtitle">Lorem ipsum dolor sit amet</p>
+						<p>Curabitur et dapibus leo. Donec eleifend pharetra sem, et interdum nunc semper vel. Sed interdum magna eu faucibus faucibus.</p>
+						<p>Nulla varius faucibus arcu, eget aliquet tortor sollicitudin ut. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam sollicitudin felis quis varius porta. Donec sit amet diam a elit pulvinar pretium.</p>
+						<a href="#" class="btn about-us">see more about us</a>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section class="services">
+	<section class="services" id="services">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-6 services-intro">
@@ -110,13 +197,13 @@
 						<div class="col col-xs-6">
 						<div class="services-item">
 							<img src="img/service4.png" alt="">
-							<p>Website design &amp; development</p>
+							<p>Website design &amp;&nbsp;development</p>
 						</div>
 						</div>
 						<div class="col col-xs-6">
 						<div class="services-item">
 							<img src="img/service3.png" alt="">
-							<p>Web security &amp; optimization</p>
+							<p>Web security &amp;&nbsp;optimization</p>
 						</div>
 						</div>
 					</div>
@@ -138,7 +225,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="works">
+	<section class="works" id="works">
 		<div class="container-fluid">
 			<div class="row">
 				<h2 class="title text-center">Recent work</h2>
@@ -174,9 +261,9 @@
 		<div id="portfolio-carousel" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators carousel-indicators-text">
-    <li data-target="#portfolio-carousel" data-slide-to="0" class="active"><</li>
-    <li data-target="#portfolio-carousel" data-slide-to="1"><a href="#" class="link-carousel">show all</a></li>
-    <li data-target="#portfolio-carousel" data-slide-to="2">></li>
+    <li data-target="#portfolio-carousel" data-slide-to="0" class="active"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></li>
+    <li data-target="#portfolio-carousel" data-slide-to="1" class="link-li"><a href="#" class="link-carousel">show all</a></li>
+    <li data-target="#portfolio-carousel" data-slide-to="2"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></li>
   </ol>
 
   <!-- Wrapper for slides -->
@@ -192,6 +279,9 @@
 				<div class="col-xs-4">
 					<div class="project-item">
 						<a href="#"><img src="img/project2.png" alt=""></a>
+						<div class="overbox">
+							<p class="overtext description">Szablon PSD pocięty i&nbsp;zakodowany od&nbsp;zera zgodnie z&nbsp;założeniami&nbsp;RWD</p>
+					    </div>
 					</div>
 				</div>
 				<div class="col-xs-4">
@@ -241,12 +331,12 @@
 				</div>
 			</div>
     </div>
-
-  </div>
 </div>
-			
+
+</div>
+	</div>		
 	</section>
-	<section class="industries">
+	<section class="industries" id="industries">
 		<div class="container">
 			<div class="row first-industries row-eq-height">
 				<div class="industries-intro col-xs-12 col-sm-6">
@@ -319,13 +409,13 @@
 			</div>	</div>
 			</div>
 		</div>
-		</div>
+
 	</section>
-	<section class="feature">
+	<section class="feature" id="feature">
 		<div class="container">
 		<div class="row">
 			<div class="col-sm-6 row-eq-height">
-				<img src="img/plyta.png" alt="" class="img-responsive plyta-img">
+				<img src="img/cover.png" alt="" class="img-responsive cover-img">
 			</div>
 			<div class="col-sm-6">
 				<h2 class="title">Feature</h2>
@@ -338,7 +428,7 @@
 		</div>
 		</div>	
 	</section>
-	<section class="news">
+	<section class="news" id="news">
 		<!-- tutaj maja wleciec dwa zestawy zdjec LOAD MORE -->
 		<div class="container">
 			<div class="row">
@@ -394,14 +484,16 @@
 						Fax: +1 646-216-9789<br>
 						Email: info@yourdomain.com </p>
 				</div>
-				<div class="col-sm-3">
+				<div class="col-sm-3 form-col">
 					<h3>Subscribe to&nbsp;our&nbsp;mailing&nbsp;list</h3>
-					<form class="form-inline">
-					  <div class="form-group">
+					<form class="form-inline" action="mail.php" method="POST">
+
 					    <label for="email" class="hidden">Email</label>
-					    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email">
-					  </div>
-					  <button type="submit" class="btn btn-default">Send</button>
+					    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+					     <button type="submit" class="btn-default"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+</button>
+					 
+					 
 					</form>
 				</div>
 			</div>
@@ -409,6 +501,42 @@
 </footer>
 <!-- script -->
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="js/bootstrap.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="js/SmoothScroll.min/js"></script>
+<script>
+	$('body').scrollspy({ target: '#menu' })
+</script>
+<script>
+	$(window).scroll(function() {
+// 100 = The point you would like to fade the nav in.
+  	var elementHeight = $( window ).height() - $(".page-nav").height();
+
+	if ($(window).scrollTop() > elementHeight ){
+    
+ 		$('.page-nav').addClass('show').fadeIn();
+    
+  } else {
+    
+    $('.page-nav').removeClass('show');
+    
+ 	};   	
+});
+</script>
+<script>
+	  $(document).ready(function(){
+  $('a[href^="#"]').on('click',function (e) {
+      e.preventDefault();
+
+      var target = this.hash;
+      var $target = $(target);
+
+      $('html, body').stop().animate({
+          'scrollTop': $target.offset().top
+      }, 900, 'swing', function () {
+          window.location.hash = target;
+      });
+  });
+});
+</script>
 </body>
 </html>
