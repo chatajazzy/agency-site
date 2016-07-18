@@ -1,10 +1,9 @@
 /* GENERAL */
 html {
-    font-size: 62.5%;
+    font-size: 70%;
 }
 body {
     position: relative;
-    overflow-x: hidden;
 }
 * {
     text-align: center;
@@ -13,6 +12,7 @@ body {
 img {
     max-width: 100%;
 }
+
 p {
     font-size: 1.4rem;
     line-height: 30px;
@@ -29,7 +29,6 @@ p {
     letter-spacing: .25rem;
     word-spacing: .3rem;
     padding: 2rem;
-    text-decoration: none !important;
     border-radius: 3px;
     margin-top: 5.5rem;
 }
@@ -84,11 +83,11 @@ p {
 
 .page-header {
     background: url(../img/header.jpg) no-repeat right;
+    background-size: cover;
     min-height: 100vh;
     margin: 0;
 }
-/* nav */
-
+/* NAV */
 .page-nav {
     background: transparent;
     border-bottom: 0;
@@ -113,7 +112,7 @@ a.navbar-brand {
     padding: 2px 10px;
 }
 a.navbar-brand:hover {
-    background: none !important;
+    background: none;
 }
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
@@ -127,9 +126,9 @@ a.navbar-brand:hover {
 }
 .page-nav.show {
     background: rgba(0, 0, 0, 0.1);
-}
+} 
 /* HEADER CAROUSEL */
-
+ 
 #carousel-example-vertical {
     padding-right: 50px;
     height: 85vh;
@@ -155,7 +154,7 @@ a.navbar-brand:hover {
 }
 .ticker-headline a:hover {
     text-decoration: none;
-    margin-bottom: 0 !important;
+    margin-bottom: 0;
 }
 .top-title {
     font-size: 5rem;
@@ -188,8 +187,8 @@ a.navbar-brand:hover {
 }
 #carousel-example-vertical .carousel-indicators {
     position: absolute;
-    bottom: 40% !important;
-    left: 120% !important;
+    bottom: 40%;
+    left: 120%;
     z-index: 15;
     width: 60%;
     list-style: none;
@@ -207,7 +206,7 @@ a.navbar-brand:hover {
     background: #fff;
 }
 #carousel-example-vertical .carousel-indicators .active {
-    background: #f16522 !important;
+    background: #f16522;
 }
 .carousel.vertical .carousel-inner > .item {
     position: static;
@@ -215,14 +214,14 @@ a.navbar-brand:hover {
 }
 .carousel.vertical .carousel-inner > .item.next,
 .carousel.vertical .carousel-inner > .item.active.right {
-    transform: translate(0, 100%) !important;
-    top: 0 !important;
+    transform: translate(0, 100%);
+    top: 0;
 }
 .carousel.vertical .carousel-inner > .item.prev,
 .carousel.vertical .carousel-inner > .item.active.left {
-    transform: translate(0, -100%) !important;
-    top: 0 !important;
-}
+    transform: translate(0, -100%);
+    top: 0;
+} 
 a.arrow-down {
     display: block;
     text-align: center;
@@ -240,7 +239,6 @@ a.arrow-down > span {
     transform: rotate(-135deg);
 }
 /* CLIENTS */
-
 .clients-bar {
     position: relative;
     background: #fff;
@@ -306,12 +304,13 @@ a.arrow-down > span {
 .clients-text {
     position: static;
     margin-top: 10px;
-}
+} 
 /* ABOUT */
 
 #about {
     background: url(../img/about-bg.jpg) no-repeat;
-    min-height: 100vh;
+    background-size: cover;
+    min-height: 75rem;
 }
 .about-col {
     height: 100%;
@@ -325,11 +324,9 @@ a.arrow-down > span {
     justify-content: center;
     align-items: center;
     background: rgba(255, 255, 255, 0.9);
-    padding: 10%;
-}
-.about-intro p {
-    max-width: 50rem;
-}
+    padding: 20% 10%;
+    min-height: 75rem;
+} 
 /* SERVICES */
 
 .services {
@@ -361,14 +358,14 @@ a.arrow-down > span {
     align-items: center;
 }
 .service.row > .col:nth-child(odd) {
-    padding-right: 0 !important;
+    padding-right: 0;
 }
 .service.row > .col:nth-child(even) {
-    padding-left: 0 !important;
+    padding-left: 0;
 }
 .services-item p {
     text-align: center;
-    padding: 0 !important;
+    padding: 0;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 1.4rem;
@@ -383,12 +380,9 @@ a.arrow-down > span {
     background: #222227;
 }
 .works > .container-fluid {
-    height: auto;
     background: #28282e;
 }
-.works > .container {
-    height: auto;
-}
+
 .works h2,
 .works h3 {
     color: #fff;
@@ -409,7 +403,7 @@ a.arrow-down > span {
 .work-subtitle {
     font-size: 1.4rem;
     color: #878796;
-    margin-bottom: 5rem !important;
+    margin-bottom: 5rem;
 }
 .project-title {
     font-size: 3rem;
@@ -488,7 +482,7 @@ a.arrow-down > span {
 /* PORTFOLIO CAROUSEL */
 
 #portfolio-carousel .carousel-indicators {
-    bottom: -30px !important;
+    bottom: -30px;
 }
 #portfolio-carousel .carousel-indicators-text li {
     display: inline-block;
@@ -542,8 +536,8 @@ a.arrow-down > span {
     background: #eee;
 }
 .industries .row .col-xs-6 {
-    margin: 0 !important;
-    padding: 10px 5px !important;
+    margin: 0;
+    padding: 10px 5px;
 }
 .industries div.col {
     display: flex;
@@ -618,7 +612,7 @@ p.subtitle:after {
 }
 .post-title {
     font-weight: bold;
-    padding: 0 !important;
+    padding: 0;
     margin: 1rem 0 .1rem;
     line-height: 25px;
     font-family: Dosis;
@@ -645,14 +639,14 @@ p.subtitle:after {
 }
 .read-more {
     color: #f16522;
-    text-decoration: none !important;
+    text-decoration: none;
 }
 .load-more {
     display: block;
     text-align: center;
     font-family: Dosis;
     font-size: 1.4rem;
-    text-decoration: none !important;
+    text-decoration: none;
     text-transform: uppercase;
     color: #3d3d3d;
     margin: 8rem 0 6.5rem;
@@ -702,7 +696,7 @@ form {
     position: relative;
 }
 input[type="email"] {
-    width: 100% !important;
+    width: 100%;
 }
 button[type="submit"] {
     position: absolute;
@@ -717,18 +711,18 @@ button[type="submit"] {
 button[type="submit"]:hover,
 button[type="submit"]:focus,
 button[type="submit"]:active {
-    background: transparent !important;
-    outline: 0 !important;
+    background: transparent;
+    outline: 0;
 }
 /* MEDIA */
 
 @media screen and (max-width: 347px) {
     .btn.more {
-        margin-right: 0 !important;
-        margin-bottom: -2rem !important;
+        margin-right: 0;
+        margin-bottom: -2rem;
     }
     .post-intro {
-        padding: 0 !important;
+        padding: 0;
     }
     #portfolio-carousel .carousel-indicators-text li {
         display: inline-block;
@@ -762,38 +756,39 @@ button[type="submit"]:active {
         text-align: left;
     }
     .page-header {
-        background: url(../img/header.jpg) no-repeat center;
-    }
-    .ticker-headline a,
-    .top-title {
-        font-size: 5rem;
-    }
-    #carousel-example-vertical .item > p {
-        padding: 0 5% 0 0;
-    }
-    .ticker-headline:after {
-        margin: 20px 0;
-    }
-    .about-intro {
-        background: transparent;
-        display: block;
-    }
-    .clients-title > * {
-        width: 40%;
-        display: inline-block;
-        margin-top: 0;
-    }
-    .clients-title-skew {
-        position: relative;
-        top: 0;
-        left: 30%;
-        float: right;
-        height: 100px;
-        display: inline-block;
-        background: white;
-        transform: skew(-35deg);
-        width: 50%;
-    }
+       background: url(../img/header.jpg) no-repeat center;
+       background-size: cover;
+   }
+   .ticker-headline a,
+   .top-title {
+       font-size: 4.8rem;
+   }
+   #carousel-example-vertical .item > p {
+       padding: 0 5% 0 0;
+   }
+   .ticker-headline:after {
+       margin: 20px 0;
+   }
+   .about-intro {
+       background: transparent;
+       display: block;
+   }
+   .clients-title > * {
+       width: 40%;
+       display: inline-block;
+       margin-top: 0;
+   }
+   .clients-title-skew {
+       position: relative;
+       top: 0;
+       left: 30%;
+       float: right;
+       height: 100px;
+       display: inline-block;
+       background: white;
+       transform: skew(-35deg);
+       width: 50%;
+   } 
     .feature {
         padding: 10rem 0;
     }
@@ -827,9 +822,6 @@ button[type="submit"]:active {
     }
     .works-table {
         margin-left: 0;
-    }
-    .work-subtitle {
-        margin-bottom: 10rem !important;
     }
     #portfolio-carousel .carousel-indicators-text li {
         text-indent: 0;
@@ -871,8 +863,8 @@ button[type="submit"]:active {
     .load-more {
         padding-top: 1rem;
     }
-    #page-footer * {
-        text-align: left !important;
+    #page-footer > * {
+        text-align: left;
     }
     #page-footer h3 {
         font-family: Dosis;
