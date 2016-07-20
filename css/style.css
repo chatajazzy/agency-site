@@ -189,7 +189,6 @@ a.navbar-brand:hover {
 /* HEADER CAROUSEL */
 #carousel-example-vertical {
     margin-top: 2rem;
-    padding-right: 50px;
     height: 85vh;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -259,19 +258,16 @@ a.navbar-brand:hover {
 }
 #carousel-example-vertical .carousel-indicators-text {
     position: absolute;
-    bottom: 20%;
-    left: 120%;
     z-index: 15;
-    width: 20px !important;
+    bottom: 10%;
     list-style: none;
     text-align: center;
-    margin-right: 0 !important;
 }
 #carousel-example-vertical .carousel-indicators li {
-    display: block;
+    display: inline-block;
     width: 12px;
     height: 12px;
-    margin: 25px 1px;
+    margin: 0 .5rem;
     text-indent: -999px;
     border-radius: 10px;
     cursor: pointer;
@@ -891,6 +887,32 @@ button[type="submit"]:active {
     .top-title {
        font-size: 4.8rem;
    }
+   #carousel-example-vertical {
+        margin-top: 2rem;
+        padding-right: 50px;
+    }
+    #carousel-example-vertical .carousel-indicators-text {
+        position: absolute;
+        bottom: 20%;
+        left: 120%;
+        z-index: 15;
+        width: 20px !important;
+        list-style: none;
+        text-align: center;
+        margin-right: 0 !important;
+    }
+    #carousel-example-vertical .carousel-indicators li {
+        display: block;
+        width: 12px;
+        height: 12px;
+        margin: 25px 1px;
+        margin: 0 .5rem;
+        text-indent: -999px;
+        border-radius: 10px;
+        cursor: pointer;
+        border: none;
+        background: #fff;
+    }
    #carousel-example-vertical .item > p {
        padding: 0 5% 0 0;
    }
