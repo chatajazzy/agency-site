@@ -259,7 +259,7 @@ a.navbar-brand:hover {
 #carousel-example-vertical .carousel-indicators-text {
     position: absolute;
     z-index: 15;
-    bottom: 10%;
+/*     bottom: 10%; */
     list-style: none;
     text-align: center;
 }
@@ -293,7 +293,7 @@ a.navbar-brand:hover {
     -webkit-transform: translate(0, -100%);
             transform: translate(0, -100%);
     top: 0;
-} 
+}   
 a.arrow-down {
     display: block;
     text-align: center;
@@ -583,7 +583,7 @@ a.arrow-down > span {
 }
 .right-side {
     width: 70%;
-    max-width: 200px;
+    max-width: 220px;
 }
 .website-link {
     color: #f16522;
@@ -605,7 +605,7 @@ a.arrow-down > span {
     background: #222227;
     color: #6a6a6f;
     font-weight: bold;
-    border: 1px dashed #6a6a6f;
+    border: 0;
     line-height: 30px;
 }
 #portfolio-carousel li.link-li {
@@ -758,6 +758,9 @@ p.subtitle:after {
 .read-more {
     color: #f16522;
     text-decoration: none;
+}
+.extra-row {
+    margin-bottom: 5rem;
 }
 .load-more {
     display: block;
@@ -994,7 +997,7 @@ button[type="submit"]:active {
         background: #222227;
         color: #6a6a6f;
         font-weight: bold;
-        border: 1px dashed #6a6a6f;
+        border: 0;
     }
     #portfolio-carousel .carousel-indicators-text li:nth-child(2) {
         width: 120px;

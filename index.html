@@ -5,10 +5,11 @@
 <meta name=viewport content="width=device-width, initial-scale=1">
 <title>Agency Site</title>
 <link crossorigin=anonymous href=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css integrity=sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7 rel=stylesheet>
-<link href=css/style.min.css rel=stylesheet>
-<!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-<![endif]-->
+<link href=css/style.css rel=stylesheet>
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 <body data-spy=scroll data-target=#menu>
 <header class=page-header>
@@ -448,7 +449,43 @@ nibh cursus, nec vestibulum orci feugiat. Nunc in
 luctus lacus. Integer eget dui nisi. Integer mauris
 lacus.</p><a class=read-more href=#>Read more</a>
 </div>
-</div><a class=load-more href=#>load more</a>
+</div>
+<div class="row extra-row hidden">
+<div class=col-sm-4>
+<img alt src=img/post1.jpg>
+<p class=post-title>Is there hope for the SEO
+profession?</p>
+<p class=post-author>Post by Lawrence R. Smith</p>
+<p class=post-intro>Donec nulla justo, pharetra in
+nulla in, lacinia pulvinar nunc. Nunc rutrum nisi vel
+nibh cursus, nec vestibulum orci feugiat. Nunc in
+luctus lacus. Integer eget dui nisi. Integer mauris
+lacus.</p><a class=read-more href=#>Read more</a>
+</div>
+<div class=col-sm-4>
+<img alt src=img/post2.jpg>
+<p class=post-title>Is there hope for the SEO
+profession?</p>
+<p class=post-author>Post by Esperanza A. Johnson</p>
+<p class=post-intro>Donec nulla justo, pharetra in
+nulla in, lacinia pulvinar nunc. Nunc rutrum nisi vel
+nibh cursus, nec vestibulum orci feugiat. Nunc in
+luctus lacus. Integer eget dui nisi. Integer mauris
+lacus.</p><a class=read-more href=#>Read more</a>
+</div>
+<div class=col-sm-4>
+<img alt src=img/post3.jpg>
+<p class=post-title>Is there hope for the SEO
+profession?</p>
+<p class=post-author>Post by Heather R. Williams</p>
+<p class=post-intro>Donec nulla justo, pharetra in
+nulla in, lacinia pulvinar nunc. Nunc rutrum nisi vel
+nibh cursus, nec vestibulum orci feugiat. Nunc in
+luctus lacus. Integer eget dui nisi. Integer mauris
+lacus.</p><a class=read-more href=#>Read more</a>
+</div>
+</div>
+<a class=load-more href=#>load more</a>
 </div>
 </section>
 </main>
@@ -484,9 +521,20 @@ Email: info@yourdomain.com</p>
 </footer>
 <script src=https://code.jquery.com/jquery-1.11.3.min.js></script>
 <script src=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js></script>
-<script src=js/SmoothScroll.min/js></script>
+<script src=js/SmoothScroll.min.js></script>
+<script src="js/flexibility.js"></script>
 <script>$("body").scrollspy({target:"#menu"});</script>
 <script>$(window).scroll(function(){var a=$(window).height()-$(".page-nav").height();if($(window).scrollTop()>a){$(".page-nav").addClass("show").fadeIn()}else{$(".page-nav").removeClass("show")}});</script>
 <script>$(document).ready(function(){$('a[href^="#"]').on("click",function(c){c.preventDefault();var b=this.hash;var a=$(b);$("html, body").stop().animate({scrollTop:a.offset().top},900,"swing",function(){window.location.hash=b})})});</script>
+<script>
+	var moreBtn = document.querySelector(".load-more");
+var extraRow = document.querySelector(".extra-row");
+moreBtn.addEventListener("click", function() {
+	if (extraRow.classList.contains("hidden")) {
+		extraRow.classList.remove("hidden");
+    moreBtn.classList.add("hidden");
+	} 
+}, false)
+</script>
 </body>
 </html>
