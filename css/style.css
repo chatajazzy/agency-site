@@ -162,14 +162,12 @@ a.navbar-brand:hover {
         margin: 0 !important;
     padding: 0 15px !important;
 }
-.collapse.navbar-collapse.in {
-    background: rgba(0, 0, 0, 0.1);
-}
 .page-nav.show .navbar-toggle.collapsed:hover {
     background: #fff;
 }
 .page-nav.show {
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.7);
+    padding-top: 15px;
 } 
 .navbar-default .navbar-toggle {
     background: transparent;
@@ -910,6 +908,9 @@ button[type="submit"]:active {
         margin-left: 15px !important;
         margin-right: 15px !important;
     }
+    .page-nav.show {
+        padding-top: 0;
+    } 
     .page-header {
        background: url(../img/header.jpg) no-repeat center;
        background-size: cover;

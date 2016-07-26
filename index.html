@@ -523,7 +523,6 @@ Email: info@yourdomain.com</p>
 <script src=https://code.jquery.com/jquery-1.11.3.min.js></script>
 <script src=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js></script>
 <script src=js/SmoothScroll.min.js></script>
-<script src="js/flexibility.js"></script>
 <script>$("body").scrollspy({target:"#menu"});</script>
 <script>$(window).scroll(function(){var a=$(window).height()-$(".page-nav").height();if($(window).scrollTop()>a){$(".page-nav").addClass("show").fadeIn()}else{$(".page-nav").removeClass("show")}});</script>
 <script>$(document).ready(function(){$('a[href^="#"]').on("click",function(c){c.preventDefault();var b=this.hash;var a=$(b);$("html, body").stop().animate({scrollTop:a.offset().top},900,"swing",function(){window.location.hash=b})})});</script>
@@ -539,7 +538,12 @@ moreBtn.addEventListener("click", function() {
 </script>
 <script src="js/wow.min.js"></script>
 <script>
-    new WOW().init();
+     wow = new WOW(
+                      {
+                      mobile:       false
+                    }
+                    )
+                    wow.init();
 </script>
 </body>
 </html>
